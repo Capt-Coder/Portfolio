@@ -1,0 +1,198 @@
+.logo{
+    box-sizing: border-box;
+    font-weight: 600;
+    background: #0d6efd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+    transition: 0.3s;
+    font-size: 16px;
+    
+}
+
+.page-link{
+    text-decoration: none;
+}
+
+.logo:hover{
+    background: rgb(3, 100, 243);
+    box-shadow: 0px 0px 9px 3px rgba(20, 80, 163, 1);
+}
+
+.logo:hover > .logo-content{
+    color: #FFC436;
+}
+
+.logo-content{
+    position: relative;
+    box-sizing: border-box;
+    background: inherit;
+    color: aliceblue;
+    letter-spacing: 0.1rem;
+    transition: 0.3s;
+}
+
+.logo-content::before{
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background-color: inherit;
+}
+
+.logo:hover .logo-content::before{
+    animation: anime linear both 1.6s;
+}
+
+@keyframes anime {
+    0% {
+        content: "#";
+    }
+
+    5% {
+        content: ".";
+    }
+
+    10% {
+        content: "^{5";
+    }
+
+    15% {
+        content: "-!@!";
+    }
+
+    20% {
+        content: "#$_=";
+    }
+
+    25% {
+        content: "№:0%";
+    }
+
+    30% {
+        content: "#{+5.";
+    }
+
+    35% {
+        content: "@}a-?";
+    }
+
+    40% {
+        content: "?{4@%";
+    }
+
+    45% {
+        content: "=.,^!";
+    }
+
+    50% {
+        content: "?2@%";
+    }
+
+    55% {
+        content: "\;1}";
+    }
+
+    60% {
+        content: "{%:%";
+        right: 0;
+    }
+
+    65% {
+        content: "|{f[4";
+        right: 0;
+    }
+
+    70% {
+        content: "{4%0%";
+        right: 0;
+    }
+
+    75% {
+        content: "'1_0<";
+        right: 0;
+    }
+
+    80% {
+        content: "{0%";
+        right: 0;
+    }
+
+    85% {
+        content: "]>'";
+        right: 0;
+    }
+
+    90% {
+        content: "4";
+        right: 0;
+    }
+
+    95% {
+        content: "2";
+        right: 0;
+    }
+
+    100% {
+        content: "";
+        right: 0;
+    }
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the darkness level here */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    /* pointer-events: none; */
+}
+
+.card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.divider{
+    height: 1px;
+    background-color: aliceblue;
+    /* margin-top: 55px;
+    margin-bottom: 55px; */
+}
+
+.group i, svg{
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.group span{
+    background-color: white;
+    padding: 4px 10px;
+    opacity: 0;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.group:hover span{
+    opacity: 1;
+}
+.group:hover i{
+    color: rgb(255, 255, 255);
+    transform: scale(1.3);
+}
+
+.group:hover svg{
+    fill: #ffffff; 
+    transform: scale(1.3);
+}
+
+footer{
+    background-color: #279EFF;
+    width: 100%;
+}
+
+footer .credit-name{
+    margin-top: 0px;
+    padding-top: 0px;
+}
